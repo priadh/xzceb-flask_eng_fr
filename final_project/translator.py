@@ -13,5 +13,12 @@ def translate_english_to_french(text):
         pass
 
     return translation.text
-translate_english_to_french( )
+#translate_english_to_french( )
+#from googletrans import Translator
+
+def frenchToEnglish(frenchText):
+    translator = Translator()
+    translation = translator.translate(frenchText, src='fr', dest='en')
+    englishText = translation.text
+    return englishText
 
